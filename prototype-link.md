@@ -43,7 +43,7 @@ Chưa deploy online. Chỉ chạy local theo hướng dẫn trên.
 1. Coach mở tab, **AI đã tự tạo sẵn review queue** với 3 case (Nhóm 07, 09, 03), mỗi case có mức ưu tiên AI đề xuất kèm lý do — AI chưa liên hệ learner nào.
 2. Coach mở case Nhóm 07 → đọc evidence + khối "Mức độ chắc chắn" giống Option A.
 3. Coach có thể **chỉnh lại mức ưu tiên** (dropdown) và **bấm "+ Yêu cầu thêm evidence"** để xem dữ liệu bổ sung (so sánh với nhóm khác, lịch sử checkpoint trước, giới hạn dữ liệu).
-4. Coach **Approve** (Hỗ trợ ngay / Lên lịch) hoặc **Dismiss — chưa đủ evidence**. Chỉ sau khi approve, hệ thống mới "tạo bước hỗ trợ tiếp theo" — điều này được nêu rõ trong kết quả.
+4. Coach **Approve** (Hỗ trợ ngay / Lên lịch) hoặc **Dismiss — chưa đủ evidence**. Chỉ sau khi approve, màn hình mới hiện dòng xác nhận "bước hỗ trợ tiếp theo được tạo" — trong bản demo này đó chỉ là một câu xác nhận trên giao diện, chưa có hành động gửi thật nào chạy phía sau.
 5. Có nút quay lại queue, quay lại case, và nút reset toàn cục.
 
 ## Điểm khác biệt cơ chế (không chỉ wording/layout)

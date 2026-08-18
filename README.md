@@ -78,11 +78,9 @@ Nhóm tổ chức thành hai nhánh triển khai để phù hợp tình hình l�
 
 ### Trách nhiệm chung
 
-- Cả A/B/C phải dùng cùng user, context, task, content/data fixture và desired outcome.
-- Người test phải trải nghiệm cả ba option; không chỉ test option mình build.
-- Mỗi observation phải tách khỏi interpretation và không được tạo feedback giả.
-- Mỗi người ghi rõ phần đóng góp thực tế trong repo cá nhân và AI Support Log.
-- Next Change chỉ được chốt sau khi có feedback thật; chưa được tuyên bố solution validated.
+- Người test phải trải nghiệm cả ba option, không chỉ mang option mình build đi test.
+- Mỗi observation phải tách khỏi interpretation, không tạo feedback giả.
+- Mỗi người ghi rõ phần đóng góp thực tế trong repo cá nhân và trong AI Support Log.
 
 ## Still Unproven
 

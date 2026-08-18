@@ -13,7 +13,7 @@
 - Build micro-prototype HTML/CSS/JS thuần cho Option A (Coach Query) và Option B (AI Review Queue), dùng chung một data fixture (lớp 50 learner, Checkpoint 1 — Cài đặt môi trường, Nhóm 03/07/09) theo đúng Comparison Contract ở CP2.
 - Viết một smoke test nội bộ (jsdom, chạy rồi xoá khỏi repo) để tự kiểm tra toàn bộ flow của A và B trước khi báo hoàn thành: chọn checkpoint, quét, mở evidence, đổi priority, yêu cầu thêm evidence, approve/dismiss, back, reset — không phát hiện lỗi JS runtime.
 - Soạn `prototype-link.md` và `human-ai-decision-table.md`, cập nhật README theo đúng trạng thái thật (Gate 4 chưa pass vì chưa có tester ngoài nhóm).
-- Đọc lại trực tiếp 3 transcript Day 17 (do người dùng cung cấp) để audit ngược CP1/CP2/CP3 thay vì chỉ tin bản tóm tắt sẵn có; phát hiện 3 điểm cần Revise (chi tiết trong artifact audit report đã publish, link do người nộp giữ): (1) Hypothesis Problem gộp hai giai đoạn "đang diễn ra"/"vừa kết thúc" có evidence khác loại; (2) câu hỏi kiểm chứng cốt lõi ("coach có từng bỏ sót ai không") đã hỏi nhưng chưa được trả lời trong transcript May; (3) các con số cụ thể trong Common Scenario (Nhóm 07, 18 phút) không xuất hiện trong transcript gốc, là fixture thiết kế.
+- Tôi đọc lại trực tiếp 3 transcript Day 17 (mình cung cấp trong hội thoại) để audit ngược CP1/CP2/CP3, thay vì chỉ tin bản tóm tắt sẵn có. Từ đó phát hiện 3 điểm cần Revise, chi tiết nằm trong artifact audit report đã publish (link tôi đang giữ). Thứ nhất, Hypothesis Problem đang gộp hai giai đoạn "đang diễn ra" và "vừa kết thúc" nhưng evidence cho hai giai đoạn này khác loại nhau. Thứ hai, câu hỏi kiểm chứng cốt lõi — coach có từng bỏ sót ai không — đã được hỏi trong transcript May nhưng chưa có câu trả lời. Thứ ba, các con số cụ thể trong Common Scenario (Nhóm 07, 18 phút) không xuất hiện trong transcript gốc — đó là fixture thiết kế, không phải số liệu thật.
 - Áp dụng các sửa chữa an toàn từ audit (không đổi Hypothesis Problem — việc đó cần cả nhóm quyết định): thêm disclaimer fixture-vs-evidence vào `three-option-design-sheet.md` và `prototype/data.js`; sửa câu "AI chưa chạy gì" thành diễn đạt chính xác hơn ("AI chưa phân tích/tổng hợp evidence") ở `prototype-link.md`/`human-ai-decision-table.md`; thêm nuance "đã hỏi, chưa có câu trả lời" vào `cp1-evidence-continuity.md` mục Still Unproven.
 
 ## 2. AI sai, hồi hộp hoặc làm các option giống nhau ở đâu?
@@ -36,4 +36,4 @@
 
 ## Cam kết minh bạch
 
-AI chỉ hỗ trợ phân tích, cấu trúc và soạn thảo. Evidence gốc đến từ tài liệu Day 17. Nhóm chịu trách nhiệm kiểm tra nội dung, build prototype, thực hiện test với người thật và ghi feedback trung thực.
+AI hỗ trợ tôi ở phần phân tích, cấu trúc tài liệu và soạn thảo câu chữ. Evidence gốc vẫn là từ ba transcript Day 17, không phải AI tạo ra. Tôi và nhóm chịu trách nhiệm kiểm tra lại nội dung, build prototype, test với người thật và ghi feedback đúng như những gì quan sát được.
