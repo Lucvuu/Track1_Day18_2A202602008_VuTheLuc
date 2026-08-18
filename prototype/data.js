@@ -40,6 +40,12 @@ const CHECKPOINTS = [
 // Các nhóm đang dừng tại Checkpoint 1 — dùng chung cho A và B.
 // Nhóm 07 là trường hợp trọng tâm của scenario, nhưng Nhóm 03/09 được giữ lại
 // để coach phải tự so sánh, không bị dẫn sẵn tới một đáp án.
+//
+// LƯU Ý EVIDENCE: "Nhóm 07", "18 phút", "mở tài liệu 4 lần" là fixture thiết kế
+// để prototype test được, lấy cảm hứng từ câu chuyện chung của PN3 (Lab Coach
+// "May" kể một learner — số ít, không phải một nhóm — kẹt ở cài đặt môi trường
+// trong khi các nhóm khác đã sang checkpoint mới). Các con số cụ thể này KHÔNG
+// xuất hiện trong transcript gốc — không dùng chúng như bằng chứng evidence.
 const GROUPS_AT_INSTALL_CHECKPOINT = [
   {
     id: "group-03",

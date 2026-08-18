@@ -51,7 +51,7 @@
 
 ## 5. Still Unproven
 
-- Có bao nhiêu learner thực sự bị bỏ sót hoặc được hỗ trợ muộn?
+- Có bao nhiêu learner thực sự bị bỏ sót hoặc được hỗ trợ muộn? — **Câu hỏi này đã được hỏi trực tiếp trong PN3 ("đã bao giờ chị từng gặp bạn nào mắc kẹt mà mình chưa giúp không?") nhưng coach chưa quay lại trả lời trong transcript; đây là "đã hỏi, chưa có câu trả lời", không phải "chưa hỏi" — nên hỏi lại trực tiếp nếu có vòng phỏng vấn tiếp theo.**
 - Nút thắt chính là thiếu tín hiệu, tín hiệu không đáng tin, hay coach thiếu thời gian để hành động?
 - VLAB/checkpoint hiện phát hiện khó khăn đủ nhanh và chính xác đến đâu?
 - Việc dừng lâu hoặc chậm checkpoint có thật sự đồng nghĩa với mắc kẹt không?

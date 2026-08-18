@@ -32,7 +32,7 @@ Chưa deploy online. Chỉ chạy local theo hướng dẫn trên.
 
 ## Critical interaction — Option A (Coach Query / On-demand Assist)
 
-1. Coach thấy danh sách 3 checkpoint của lớp, **AI chưa chạy gì**.
+1. Coach thấy danh sách 3 checkpoint của lớp (kèm số liệu tổng hợp kiểu-VLAB đã có sẵn, ví dụ "7/10 nhóm đã qua"), **AI chưa phân tích hay tổng hợp evidence gì ở mức nhóm**.
 2. Coach chọn "Checkpoint 1 — Cài đặt môi trường" → nút "Kiểm tra nhóm đang chậm" mới bật lên.
 3. Coach bấm nút → AI chỉ phân tích phạm vi checkpoint đó → trả về danh sách nhóm đang dừng (Nhóm 03, 07, 09), sắp theo thời gian dừng.
 4. Coach bấm vào Nhóm 07 → xem evidence chi tiết (thời gian dừng, yêu cầu trợ giúp, số lần mở tài liệu, lịch sử hỗ trợ) kèm khối "Mức độ chắc chắn" giải thích rõ đây là tín hiệu gián tiếp.
@@ -51,3 +51,15 @@ Chưa deploy online. Chỉ chạy local theo hướng dẫn trên.
 - A: **Coach khởi tạo** phân tích, phạm vi do coach chọn, AI không tự xếp hạng gì trước khi được hỏi.
 - B: **AI khởi tạo** review queue trước, tự xếp priority + giải thích, coach review/sửa/approve từng case; AI vẫn không tự liên hệ learner nếu chưa approve.
 - Cả hai dùng chung: user (Lab Coach), lớp 50 learner, task, data fixture (Nhóm 03/07/09 tại Checkpoint 1), visual style, result choices, và reset path.
+
+## Prototype annotation (nội bộ facilitator — không đọc/hiện cho tester)
+
+**OPTION A — Coach Query**
+- We expect the tester to: chủ động chọn checkpoint rồi bấm "Kiểm tra nhóm đang chậm" *trước khi* mong đợi thấy danh sách nhóm/evidence — nếu họ ngồi chờ thông tin tự hiện ra, đó là dấu hiệu cơ chế "on-demand" chưa rõ với họ.
+- Watch for: tester có tự nhớ/biết phải bấm yêu cầu không hay cần được nhắc; mất bao lâu để chọn đúng checkpoint; họ có đọc khối "Mức độ chắc chắn" trước khi quyết định hay bỏ qua thẳng tới nút hành động; họ có so sánh cả 3 nhóm (03/07/09) hay chỉ nhìn Nhóm 07 vì thấy trước.
+- Do not explain: không giải thích vì sao nút "Kiểm tra nhóm đang chậm" bị mờ ban đầu; không gợi ý nên chọn checkpoint nào; không đọc hộ nội dung evidence panel.
+
+**OPTION B — AI Review Queue**
+- We expect the tester to: mở tab thấy ngay review queue đã có sẵn, không cần bấm gì — nếu họ đi tìm một nút "quét"/"phân tích" như ở A, đó là dấu hiệu họ đang áp cơ chế A vào B.
+- Watch for: tester có nhận ra queue là do AI tự tạo (đọc banner) hay coi đó là hiển nhiên; họ có bấm "+ Yêu cầu thêm evidence" trước khi quyết định hay chỉ nhìn priority AI đề xuất rồi làm theo; họ có tự đổi priority hay giữ nguyên đề xuất AI; họ có đọc dòng "chỉ sau khi approve mới tạo bước hỗ trợ" hay tưởng bấm là learner được liên hệ ngay.
+- Do not explain: không giải thích vì sao Nhóm 07 được xếp priority Cao; không nói trước rằng có thể chỉnh priority; không diễn giải hộ khối "Mức độ chắc chắn".

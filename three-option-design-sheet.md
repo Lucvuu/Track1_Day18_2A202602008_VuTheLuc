@@ -48,6 +48,8 @@ Ba option được chọn không nhằm tạo một option “tệ” để hai 
 | Recovery path | Coach có thể quay lại, sửa quyết định và reset về common context |
 | Prototype scope | 2–3 trạng thái: Common Context → Critical Interaction → Result/User Decision |
 
+> **Lưu ý evidence:** Các con số trong Common Scenario ("Nhóm 07", "18 phút", "mở tài liệu nhiều lần") là **fixture thiết kế** để prototype test được, lấy cảm hứng từ câu chuyện của PN3 (Lab Coach kể một learner — số ít, không phải một nhóm — kẹt ở cài đặt môi trường trong khi các nhóm khác đã sang checkpoint mới). Các con số cụ thể này không xuất hiện trong transcript Day 17 gốc; không dùng chúng như bằng chứng evidence khi trình bày CP1.
+
 ## 4. Những thứ được phép khác
 
 | Thành phần | Option A | Option B | Option C |
