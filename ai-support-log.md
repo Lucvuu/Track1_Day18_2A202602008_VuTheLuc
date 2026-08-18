@@ -34,6 +34,15 @@
 - Không điền `prototype-feedback-note.md` và `group-feedback-synthesis.md` vì chưa test với người thật; không đánh dấu Gate 4 pass trong README dù prototype đã tự chạy được đầy đủ.
 - Chưa chọn option thắng và chưa ghi feedback/observation chưa diễn ra.
 
+## 4. Cập nhật bổ sung — build Option C (Proactive Support Agent)
+
+- AI đã giúp thiết kế và code prototype Option C trong cùng bộ file `prototype/` (data.js, app.js, index.html, styles.css) để giữ đúng data fixture chung với A/B (Nhóm 03/07/09, Checkpoint 1), theo đúng phân công CP2/CP3 thuộc phần Loan.
+- Quyết định cơ chế cụ thể để tránh việc C chỉ là "B đổi tên": Nhóm 07 (tín hiệu mạnh nhưng mâu thuẫn — dừng lâu và mở tài liệu nhiều lần, nhưng chưa xin giúp) được AI **tự Act** — tự gửi một check-in trung lập, rủi ro thấp, có thể thu hồi, ngay cả trước khi coach mở tab; Nhóm 09 (learner đã tự gửi yêu cầu trợ giúp) được coi là **ảnh hưởng lớn** nên AI **không tự trả lời**, chuyển thẳng cho coach (Ask); Nhóm 03 (tín hiệu bình thường) thì AI **không hành động** (Don't Act), chỉ ghi log theo dõi. Đây là diễn giải cụ thể hoá quy tắc "Act rủi ro thấp / Ask khi mâu thuẫn hoặc ảnh hưởng lớn" đã có trong `three-option-design-sheet.md`, áp dụng đúng lên ba case sẵn có thay vì bịa thêm dữ liệu mới.
+- Thêm các cơ chế Control & Recovery mà thiết kế CP2 yêu cầu nhưng A/B không cần: audit log hiển thị mọi hành động AI đã tự làm/tự quyết định không làm, nút thu hồi (undo) check-in trước khi có phản hồi, mô phỏng phản hồi learner (gắn nhãn rõ là mô phỏng, không phải dữ liệu thật), toggle tắt theo dõi chủ động theo từng nhóm, và toggle tạm dừng toàn bộ hành động tự động ở cấp policy.
+- Viết lại smoke test nội bộ bằng jsdom (cài tạm trong scratchpad, không đưa vào repo) để tự kiểm 15 kịch bản: chuyển tab, mở case theo 3 nhánh Act/Ask/Don't-Act, undo, mô phỏng learner đồng ý/từ chối, toggle opt-out và pause có ghi log đúng không, reset đưa log về đúng 3 dòng ban đầu, và hồi quy — xác nhận Option A/B vẫn chạy đúng sau khi thêm Option C.
+- **AI sai một lần trong khi tự kiểm:** toggle "tạm dừng hành động tự động" ghi log vào mảng dữ liệu nhưng quên gọi lại hàm render, nên audit log hiển thị không cập nhật ngay dù dữ liệu đã đúng — smoke test phát hiện, đã sửa bằng cách gọi render lại activity feed ngay sau khi ghi log.
+- Cập nhật `README.md`, `human-ai-decision-table.md` (thay toàn bộ cột "(Thiết kế, chưa test)" bằng mô tả implementation thật), `prototype-link.md` (thêm Critical interaction và facilitator annotation cho C) để phản ánh đúng: Option C đã implement và tự kiểm được cho Gate 3, nhưng Gate 4/5 vẫn chưa đạt vì chưa có tester ngoài nhóm và chưa có feedback thật.
+
 ## Cam kết minh bạch
 
 AI hỗ trợ tôi ở phần phân tích, cấu trúc tài liệu và soạn thảo câu chữ. Evidence gốc vẫn là từ ba transcript Day 17, không phải AI tạo ra. Tôi và nhóm chịu trách nhiệm kiểm tra lại nội dung, build prototype, test với người thật và ghi feedback đúng như những gì quan sát được.
