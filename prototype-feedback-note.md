@@ -1,7 +1,8 @@
 # Prototype Feedback Note
 
 **Người thu thập:** Đỗ Thị Thanh Loan
-**Hình thức:** 12 người ngoài nhóm tự mở link prototype (https://claude.ai/code/artifact/fce7227a-a027-47b1-9282-2ebf58048e26) và tự bấm qua cả 3 tab A/B/C, trong khi Loan **trực tiếp phỏng vấn và xem thao tác của họ** (facilitator có mặt, quan sát trực tiếp, không narrate) — đây là phiên đồng bộ đúng cấu trúc facilitation gốc của bài, không phải tự báo cáo qua tin nhắn.
+**Hình thức:** 12 người ngoài nhóm mở prototype (chạy local, file `index.html`) trên máy tính của Loan và tự bấm qua cả 3 tab A/B/C, trong khi Loan **trực tiếp phỏng vấn và xem thao tác của họ** (facilitator có mặt, quan sát trực tiếp, không narrate) — đây là phiên đồng bộ đúng cấu trúc facilitation gốc của bài, không phải tự báo cáo qua tin nhắn.
+**Vai trò người tham gia:** trong 12 người này có 1 Lab Coach thật — Lê Thiên Khang. 
 
 ## Giới hạn về phương pháp — đọc trước khi dùng bảng dưới
 
@@ -30,7 +31,7 @@ Vì vậy bảng dưới đây **chỉ điền được** cột "Option chọn" 
 
 ```
 OBSERVED
-12 người mở prototype qua link, dùng cả A/B/C, trong buổi phỏng vấn trực tiếp do Loan facilitate
+12 người mở prototype (local, trên máy tính của Loan), dùng cả A/B/C, trong buổi phỏng vấn trực tiếp do Loan facilitate
 (Loan xem trực tiếp thao tác, không narrate); lựa chọn + lý do + điểm khó chịu ghi lại qua hỏi đáp
 trực tiếp, không phải qua tin nhắn tự gửi. Hành vi thao tác cụ thể không được ghi log theo thời gian
 thực trong lúc quan sát.

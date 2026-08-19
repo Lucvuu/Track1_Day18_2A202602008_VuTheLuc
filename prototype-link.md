@@ -20,9 +20,7 @@ Không cần build step, không cần backend, không cần cài package.
 
 ## Link deploy
 
-**Live:** https://claude.ai/code/artifact/fce7227a-a027-47b1-9282-2ebf58048e26 — bản dùng để 12 người ngoài nhóm tự test (xem `prototype-feedback-note.md`). [CẦN XÁC NHẬN: link này còn hoạt động/đúng bản mới nhất không — nếu đã cập nhật prototype sau khi thu feedback, ghi rõ link nào ứng với bản đã test]
-
-Ngoài ra vẫn chạy được local theo hướng dẫn trên (không cần build step/backend).
+Chưa deploy online. Phiên phỏng vấn trực tiếp với 12 người ngoài nhóm (xem `prototype-feedback-note.md`) cũng dùng bản local này, mở trên máy tính của Loan. Chạy theo hướng dẫn trên (không cần build step/backend).
 
 ## Đường dẫn file
 

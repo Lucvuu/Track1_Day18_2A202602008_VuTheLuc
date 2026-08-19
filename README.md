@@ -34,9 +34,7 @@
 
 ## Cách chạy prototype (Option A, B & C)
 
-**Live demo:** https://claude.ai/code/artifact/fce7227a-a027-47b1-9282-2ebf58048e26 — đây là bản dùng trong phiên phỏng vấn trực tiếp với 12 người ngoài nhóm (xem [prototype-feedback-note.md](prototype-feedback-note.md)). [CẦN XÁC NHẬN: link còn hoạt động và đúng bản đã test không]
-
-Hoặc chạy local — không cần build step, không cần backend, không cần cài package:
+Chưa deploy online — buổi phỏng vấn trực tiếp với 12 người ngoài nhóm (xem [prototype-feedback-note.md](prototype-feedback-note.md)) cũng dùng bản chạy local này, mở trên máy tính của Loan. Không cần build step, không cần backend, không cần cài package:
 
 ```bash
 cd prototype
@@ -103,7 +101,7 @@ Nhóm tổ chức thành hai nhánh triển khai để phù hợp tình hình l�
 
 ## Prototype Feedback
 
-**Nguồn:** 12 người ngoài nhóm dùng prototype qua link live trong một phiên phỏng vấn trực tiếp do Đỗ Thị Thanh Loan facilitate — Loan xem trực tiếp thao tác của họ trên cả ba tab A/B/C, không narrate, đúng cấu trúc đồng bộ của luật facilitation gốc của bài. Chi tiết đầy đủ ở [prototype-feedback-note.md](prototype-feedback-note.md), tổng hợp pattern ở [group-feedback-synthesis.md](group-feedback-synthesis.md).
+**Nguồn:** 12 người ngoài nhóm dùng bản prototype chạy local trên máy tính của Loan, trong một phiên phỏng vấn trực tiếp do Đỗ Thị Thanh Loan facilitate — Loan xem trực tiếp thao tác của họ trên cả ba tab A/B/C, không narrate, đúng cấu trúc đồng bộ của luật facilitation gốc của bài. Chi tiết đầy đủ ở [prototype-feedback-note.md](prototype-feedback-note.md), tổng hợp pattern ở [group-feedback-synthesis.md](group-feedback-synthesis.md).
 
 **Giới hạn quan trọng:** phần "phiên đồng bộ, có facilitator quan sát trực tiếp" đã đạt. Giới hạn còn lại: hành vi cụ thể (first action, chỗ dừng, cách sửa) **không được ghi log lại theo thời gian thực** trong lúc quan sát — nên bảng phản hồi chỉ có dữ liệu về lựa chọn/lý do/điểm khó chịu, không có cột hành vi thao tác bằng văn bản.
 
@@ -118,7 +116,7 @@ Nhóm tổ chức thành hai nhánh triển khai để phù hợp tình hình l�
   - False positive ở Option C nên được xử lý/phục hồi ra sao ngoài Undo hiện có.
   - Learner có cần được thông báo AI đang theo dõi tín hiệu hành vi của họ không (câu hỏi consent, ngoài scope 3 prototype hiện tại).
   - Loan có quan sát trực tiếp thao tác của 12 người này, nhưng không ghi log hành vi chi tiết theo thời gian thực — nên vẫn thiếu bằng chứng viết lại cho việc họ có thực sự làm đúng outcome task hay chỉ so sánh 3 cơ chế trừu tượng.
-  - Chưa test với Lab Coach thật đang trong ca dạy bận rộn.
+  - Trong 12 người có 1 Lab Coach thật (Lê Thiên Khang), nhưng chưa rõ có phải test lúc đang trong ca dạy bận rộn hay không — [CẦN XÁC NHẬN: phản hồi số mấy trong prototype-feedback-note.md].
 
 ## AI Support Log
 

@@ -1,6 +1,6 @@
 # Group Feedback Synthesis
 
-**Nguồn:** 12 phản hồi từ phiên phỏng vấn trực tiếp do Đỗ Thị Thanh Loan facilitate — người ngoài nhóm tự dùng prototype qua link live trong khi Loan xem trực tiếp thao tác và hỏi. Chi tiết từng phản hồi ở `prototype-feedback-note.md`.
+**Nguồn:** 12 phản hồi từ phiên phỏng vấn trực tiếp do Đỗ Thị Thanh Loan facilitate — người ngoài nhóm tự dùng bản prototype chạy local trên máy tính của Loan trong khi Loan xem trực tiếp thao tác và hỏi. Chi tiết từng phản hồi ở `prototype-feedback-note.md`.
 **Giới hạn cần đọc trước:** đây là phiên đồng bộ, có facilitator quan sát trực tiếp đúng cấu trúc luật gốc của bài — nhưng hành vi cụ thể (first action, chỗ dừng, cách lấy lại control) không được ghi chép lại thành văn bản ngay lúc quan sát, nên vẫn thiếu lớp dữ liệu hành vi chi tiết dù có facilitator thật.
 
 ## Phân bố lựa chọn
@@ -34,7 +34,7 @@ Không dùng con số này như bằng chứng "B thắng" — mẫu 12 người
 - False positive ở Option C nên được xử lý/phục hồi ra sao ngoài Undo hiện có.
 - Learner có cần được thông báo là AI đang theo dõi tín hiệu hành vi của họ không (câu hỏi consent, chưa nằm trong scope 3 prototype hiện tại).
 - Loan có quan sát trực tiếp thao tác của 12 người này, nhưng không ghi log hành vi chi tiết theo thời gian thực — nên vẫn thiếu bằng chứng viết lại cho việc họ có thực sự làm đúng outcome task (xác định nhóm cần ưu tiên, quyết định bước hỗ trợ) hay chỉ đang so sánh 3 cơ chế trừu tượng.
-- Chưa test với Lab Coach thật đang trong ca dạy bận rộn — 12 người này là người ngoài nhóm nói chung, không rõ có ai từng làm vai trò tương tự Lab Coach không.
+- Trong 12 người có 1 Lab Coach thật (Lê Thiên Khang) — [CẦN XÁC NHẬN: phản hồi số mấy trong prototype-feedback-note.md] — nhưng chưa rõ đây có phải lúc đang trong ca dạy bận rộn hay không, và 11 người còn lại vẫn không rõ có ai từng làm vai trò tương tự không.
 
 ## Nguyên tắc khi đọc bảng trên
 
