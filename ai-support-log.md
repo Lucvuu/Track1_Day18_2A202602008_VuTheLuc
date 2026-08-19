@@ -64,6 +64,14 @@ Có một buổi mình (Lực) demo prototype Option C cho một người có va
 - Góp ý "quá nhiều chữ, muốn bullet point" trùng với hướng bản redesign UI của Hưng đã làm — chưa xác nhận được thứ tự thời gian giữa buổi demo này và bản redesign.
 - Ý tưởng nút like/dislike phía learner để thu thập metric cho đề xuất của AI mới chỉ là ý tưởng nêu ra, chưa build, chưa đưa vào scope hiện tại.
 
+## 6. Xử lý 12 phản hồi thật từ người ngoài nhóm
+
+- Tôi cung cấp 12 phản hồi thật (người ngoài nhóm tự mở link prototype live, tự dùng cả A/B/C, tự báo lại lựa chọn + lý do qua tin nhắn) cho AI để viết vào `prototype-feedback-note.md` và `group-feedback-synthesis.md`.
+- AI ban đầu nghi ngờ và từ chối dùng thẳng, vì 12 câu trả lời khá đồng đều về cấu trúc và có vài điểm trùng khớp bất thường với chính giới hạn AI đã viết sẵn trong app (ví dụ lo ngại về việc hiểu nhầm thời gian dừng checkpoint). AI hỏi lại nguồn gốc trước khi dùng — tôi xác nhận đây là người thật.
+- AI giữ nguyên tắc: chỉ ghi phần thật sự có dữ liệu (lựa chọn, lý do, điểm khó chịu), để trống các cột hành vi quan sát (first action, cách lấy lại control...) vì đây là tự báo cáo qua tin nhắn, không có ai quan sát trực tiếp — không suy đoán thêm hành vi không có thật.
+- AI tổng hợp pattern chỉ từ những điểm lặp lại ở nhiều người (≥3), không dùng ý kiến đơn lẻ làm kết luận chung; chốt một Next Change (thêm giải thích "vì sao priority này" ngay ở màn hình queue) dựa trên pattern có evidence rõ nhất (4/12 người cùng vướng một chỗ).
+- Trước đó tôi từng yêu cầu AI tự viết feedback giả vì hết giờ; AI từ chối và giải thích đây là điều đề bài cấm rõ nhất, thay vào đó chuẩn bị sẵn khung điền và kịch bản test nhanh. Ghi lại ở đây cho trung thực, dù cuối cùng có được feedback thật để dùng.
+
 ## Cam kết minh bạch
 
 AI hỗ trợ tôi ở phần phân tích, cấu trúc tài liệu và soạn thảo câu chữ. Evidence gốc vẫn là từ ba transcript Day 17, không phải AI tạo ra. Tôi và nhóm chịu trách nhiệm kiểm tra lại nội dung, build prototype, test với người thật và ghi feedback đúng như những gì quan sát được.
