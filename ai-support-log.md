@@ -43,6 +43,27 @@
 - **AI sai một lần trong khi tự kiểm:** toggle "tạm dừng hành động tự động" ghi log vào mảng dữ liệu nhưng quên gọi lại hàm render, nên audit log hiển thị không cập nhật ngay dù dữ liệu đã đúng — smoke test phát hiện, đã sửa bằng cách gọi render lại activity feed ngay sau khi ghi log.
 - Cập nhật `README.md`, `human-ai-decision-table.md` (thay toàn bộ cột "(Thiết kế, chưa test)" bằng mô tả implementation thật), `prototype-link.md` (thêm Critical interaction và facilitator annotation cho C) để phản ánh đúng: Option C đã implement và tự kiểm được cho Gate 3, nhưng Gate 4/5 vẫn chưa đạt vì chưa có tester ngoài nhóm và chưa có feedback thật.
 
+## 5. Phản hồi từ một buổi demo với mentor/stakeholder (không tính là test Chặng 6)
+
+Có một buổi mình (Lực) demo prototype Option C cho một người có vai trò cao hơn trong chương trình (gọi là "anh" trong đoạn ghi âm — có khả năng quyết định đề xuất giải pháp lên VLAB thật). Đây là **buổi demo có người dẫn**: mình thao tác và giải thích trong lúc anh xem, hỏi, phản hồi — không phải anh tự bấm prototype một mình. Vì vậy nó **không thay thế** được cho 3 Feedback Note bắt buộc ở Chặng 6 (yêu cầu tester tự điều khiển, facilitator không narrate) — chỉ ghi lại đây làm input tham khảo, tách rõ observation khỏi diễn giải.
+
+**Observed — anh thực sự nói/hỏi gì:**
+- Hỏi thẳng "tại sao lại phải đưa vào hàng đợi?" khi thấy AI đã tổng hợp tín hiệu — ban đầu nhầm lẫn cơ chế giữa Option A và B.
+- Sau khi nghe giải thích Act/Ask/Don't-Act ở Option C, tự đưa ra ví von: AI như "siêu xe không phanh trên cao tốc"; nêu lý do ủng hộ nút dừng khẩn cấp là AI có thể "ảo giác" và việc hỗ trợ học viên ảnh hưởng trực tiếp tới công việc/lương của Lab Coach nên không thể để AI toàn quyền.
+- Xem case Nhóm 07 (Act), nhận xét giao diện "hơi nhiều text quá, nhìn phát chưa nắm được tình hình" — muốn dạng bullet point để quét nhanh.
+- Hỏi rõ hệ thống "có thay thế được lắp code không?" — xác nhận không, chỉ hỗ trợ.
+- Tự diễn giải lại đúng vấn đề gốc: có nhóm mạnh dạn giơ tay xin giúp, có nhóm rụt rè giấu vấn đề, gây khó khăn cho cả việc học lẫn việc lắp code hỗ trợ hợp lý.
+- Kết luận "về mặt ý tưởng là ok", đề xuất áp dụng vào VLAB thật, hứa đề xuất lên; hỏi thêm về một dashboard cho Lab Coach xem tiến độ từng nhóm — được biết dashboard đó "đã build nhưng chưa đẩy lên" repo.
+
+**Interpreted — không coi là fact:**
+- "Hữu ích" là phản ứng của một người xem demo có người dẫn, chưa phải learner hay Lab Coach thật tự dùng độc lập — không suy ra learner/coach nói chung sẽ phản ứng giống vậy.
+- Việc anh hiểu đúng Act/Ask/Don't-Act sau khi được giải thích không chứng minh giao diện tự nó đủ rõ; câu hỏi "tại sao phải xếp hàng đợi" lúc đầu cho thấy nếu không có người dẫn, dễ nhầm cơ chế giữa các option — đúng loại nhầm lẫn mà một phiên test Chặng 6 thật (không narrate) cần đo, chưa đo được ở đây vì có người giải thích.
+
+**Việc cần làm rút ra, không phải feedback:**
+- Kiểm tra với Hưng có một "dashboard cho Lab Code" đã build cục bộ nhưng chưa push lên repo — nên xác nhận và đẩy lên nếu có, vì có thể là phần thiếu trong bài nộp.
+- Góp ý "quá nhiều chữ, muốn bullet point" trùng với hướng bản redesign UI của Hưng đã làm — chưa xác nhận được thứ tự thời gian giữa buổi demo này và bản redesign.
+- Ý tưởng nút like/dislike phía learner để thu thập metric cho đề xuất của AI mới chỉ là ý tưởng nêu ra, chưa build, chưa đưa vào scope hiện tại.
+
 ## Cam kết minh bạch
 
 AI hỗ trợ tôi ở phần phân tích, cấu trúc tài liệu và soạn thảo câu chữ. Evidence gốc vẫn là từ ba transcript Day 17, không phải AI tạo ra. Tôi và nhóm chịu trách nhiệm kiểm tra lại nội dung, build prototype, test với người thật và ghi feedback đúng như những gì quan sát được.
