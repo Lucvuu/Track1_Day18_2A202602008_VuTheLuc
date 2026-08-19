@@ -32,7 +32,7 @@
 | CP4 — Test-ready | [prototype-link.md](prototype-link.md) | Prototype A/B/C chạy được local; **chưa test với người thật** |
 | CP5 — Learning | `group-feedback-synthesis.md` | Chưa thực hiện — cần feedback thật trước khi điền |
 
-## Cách chạy prototype (Option A & B)
+## Cách chạy prototype (Option A, B & C)
 
 Không cần build step, không cần backend, không cần cài package.
 
