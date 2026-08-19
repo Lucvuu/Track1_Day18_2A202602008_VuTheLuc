@@ -1,0 +1,249 @@
+/* =====================================================================
+   labcoach-dashboard.css — bổ sung riêng cho bản dùng thật của Lab Coach
+   (Proactive Agent only). Dùng chung toàn bộ token + component với
+   styles.css (topbar, stat, case-card, policy-card, timeline, evidence,
+   rail, switch, result, btn...) — file này chỉ thêm những gì styles.css
+   chưa có: khung overlay chi tiết case và vài chỉnh sửa bố cục nhỏ.
+   ===================================================================== */
+
+/* Trang này không có tab/outcome strip nên topbar thấp hơn — sidebar
+   dính (sticky) phải bám gần hơn so với bản A/B/C gốc. */
+.caseview-side {
+  top: 88px;
+}
+
+/* Header của trang: tên lớp bên trái, trạng thái AI + theme toggle bên phải */
+.dash-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Sidebar chỉ cần 1 cột cho policy-card thay vì 2 cột như bản A/B/C gốc */
+.policy-grid-stack {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+/* Trang này chỉ có 3 chỉ số (không phải 4 như Option A/B) */
+#kpi-row.stats {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+@media (max-width: 960px) {
+  #kpi-row.stats {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+/* Banner cảnh báo khi AI đang tạm dừng — tái dùng .note-box nhưng tông warning */
+.note-box.tone-warning {
+  border-left-color: var(--warning);
+}
+.note-box.tone-warning .overline {
+  color: var(--warning);
+}
+
+/* Case đã đóng thu gọn — tái dùng .result, thêm biến thể "đang chờ xử lý thủ công" */
+.result.pending {
+  --tone: var(--calm);
+}
+
+/* ------------------------------------------------------------- overlay */
+/* Panel chi tiết case mở giữa màn hình (modal), không phải slide-over —
+   coach nhìn thấy toàn bộ thông tin quan trọng ngay khi mở, không cần
+   liếc sang một bên. Nội dung bên trong được rút gọn tối đa (xem
+   quickEvidenceHTML trong .js) để nắm nhanh trong vài giây. */
+
+.overlay-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  background: color-mix(in srgb, black 60%, transparent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.overlay-panel {
+  width: 520px;
+  max-width: 100%;
+  max-height: min(88vh, 720px);
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--r-lg);
+  box-shadow: var(--shadow-float);
+  padding: 24px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.overlay-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.overlay-title {
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.overlay-members {
+  display: block;
+  margin-top: 2px;
+  font-size: 12px;
+  color: var(--fg-subtle);
+}
+
+.overlay-close {
+  flex: none;
+  width: 30px;
+  height: 30px;
+  border-radius: var(--r-sm);
+  border: 1px solid var(--line-strong);
+  background: none;
+  color: var(--fg-muted);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay-close:hover {
+  background: var(--elevated);
+  color: var(--fg);
+}
+
+/* Evidence rút gọn: chỉ 3 tín hiệu quan trọng nhất + 1 dòng độ chắc chắn,
+   bỏ tile "lịch sử hỗ trợ" (luôn là "chưa có lượt nào", không giúp quyết
+   định) và bỏ việc tách uncertainty thành nhiều bullet. */
+.ec-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.ec-item {
+  background: var(--sunken);
+  border: 1px solid var(--line);
+  border-radius: var(--r-sm);
+  padding: 8px 10px;
+}
+
+.ec-label {
+  display: block;
+  font-size: 11px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--fg-subtle);
+}
+
+.ec-value {
+  display: block;
+  margin-top: 3px;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+/* Optout đặt cuối, nhỏ và nhẹ hơn quyết định chính để không cạnh tranh
+   sự chú ý với 3 nút quyết định. */
+.overlay-panel .switch {
+  padding: 8px 12px;
+  font-size: 12px;
+  margin-top: 0;
+}
+
+/* Checkpoint progress cả lớp — cp-card ở đây chỉ để xem, không bấm chọn */
+.cp-card.static {
+  cursor: default;
+}
+.cp-card.static:hover {
+  background: var(--surface);
+  border-color: var(--line);
+}
+
+/* Case do coach tự đánh dấu (không phải AI phát hiện) — tông riêng để
+   phân biệt rõ với case do AI chuyển (tone-warning) hay AI tự Act
+   (tone-accent). Dùng lại token neon-violet đã có trong styles.css. */
+.tone-flag {
+  --tone: var(--neon-violet);
+}
+
+/* ------------------------------------------------------ roster nhóm */
+/* Danh sách toàn bộ nhóm ở checkpoint hiện tại, để coach không bị mù với
+   những nhóm không nổi lên ở "Cần bạn chú ý ngay" / "AI đã tự xử lý". */
+.roster-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--r-md);
+  padding: 10px 14px;
+  margin-bottom: 8px;
+}
+.roster-row:last-child {
+  margin-bottom: 0;
+}
+.roster-row.roster-muted {
+  background: var(--sunken);
+  color: var(--fg-subtle);
+}
+.roster-main {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+.roster-name {
+  font-size: 13px;
+  font-weight: 600;
+}
+.roster-status {
+  font-size: 12px;
+  color: var(--fg-muted);
+}
+
+/* Ghi chú nhanh của coach trong panel case */
+.note-input {
+  width: 100%;
+  min-height: 56px;
+  resize: vertical;
+  background: var(--sunken);
+  border: 1px solid var(--line-strong);
+  border-radius: var(--r-sm);
+  color: var(--fg);
+  font-family: inherit;
+  font-size: 13px;
+  padding: 8px 10px;
+}
+.note-input:focus {
+  border-color: var(--accent);
+  outline: none;
+  box-shadow: 0 0 0 1px var(--accent);
+}
+.note-label {
+  display: block;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--fg-subtle);
+  margin-bottom: 4px;
+}
+
+@media (max-width: 860px) {
+  .overlay-backdrop {
+    padding: 12px;
+  }
+  .overlay-panel {
+    max-height: 92vh;
+  }
+  .ec-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
