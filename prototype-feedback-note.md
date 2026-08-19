@@ -55,3 +55,19 @@ STILL UNPROVEN
 - Vì đây là tự báo cáo không đồng bộ, không biết hành vi thao tác thật của 12 người này khi dùng —
   chỉ biết họ nói gì sau khi dùng xong, không biết họ có thực sự làm đúng outcome task hay bỏ qua bước nào.
 ```
+
+---
+
+## Phụ lục — Mock / Dry-run (tài liệu tham khảo, không tính vào Gate 4)
+
+Trước khi có 12 phản hồi thật ở trên, nhóm dùng một bản mock/dry-run để luyện format ghi feedback. **Đây là template dùng chung** — Hưng cũng dùng đúng bản này (chỉ đổi tên) trong repo của Hưng để luyện trước khi có phản hồi thật, nên hai bản gần như giống hệt nhau về câu chữ. Không phải hai lần luyện độc lập ra trùng nhau ngẫu nhiên — ghi rõ ở đây để không ai đọc nhầm là trùng hợp.
+
+**Loại feedback:** Mock/Synthetic — Lực tự đóng vai tester để luyện format, không phải người ngoài nhóm.
+
+**Preferred option (mock):** B — AI Review Queue, vì cảm giác cân bằng nhất giữa automation và human control; vẫn muốn xem evidence trước khi đồng ý với recommendation của AI.
+
+**Main friction (mock):** chưa rõ vì sao AI xếp một nhóm vào High Priority nếu không hiển thị evidence ngay trên giao diện.
+
+**Next Change gợi ý từ mock:** hiển thị 2–3 evidence chính ngay trên priority card, thay vì phải bấm sâu vào case detail mới hiểu recommendation.
+
+**Đối chiếu với dữ liệu thật:** bản mock này dự đoán đúng đúng pattern mà 4/12 phản hồi thật ở trên cũng nêu ra độc lập (mục Bốn lớp, INTERPRETED) — mock không phải evidence, nhưng việc nó dự đoán đúng hướng cho thấy trade-off của Option B (thiếu giải thích priority) là điểm dễ thấy, không cần chờ 12 phản hồi mới nhận ra.

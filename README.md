@@ -122,7 +122,7 @@ Track1_Day18_DuongBonMuaXuan/
 - [x] Gate 1 — Evidence Continuity
 - [x] Gate 2 — Meaningful Options
 - [x] Gate 3 — Human Control — tự kiểm xong cho Option A, B và C ([human-ai-decision-table.md](human-ai-decision-table.md)); chỉ là tự kiểm nội bộ bằng smoke test, chưa có tester ngoài nhóm xác nhận.
-- [ ] Gate 4 — Test-ready — prototype A/B/C đã tự kiểm toàn bộ flow và có 12 phản hồi thật, nhưng ở dạng tự báo cáo qua tin nhắn, không có facilitator quan sát hành vi trực tiếp như luật gốc của bài yêu cầu; chưa đủ điều kiện đánh dấu pass đầy đủ.
+- [ ] Gate 4 — Test-ready — prototype A/B/C đã tự kiểm toàn bộ flow và có 12 phản hồi thật (xem [prototype-feedback-note.md](prototype-feedback-note.md)), nhưng ở dạng tự báo cáo qua tin nhắn, không có facilitator quan sát hành vi trực tiếp như luật gốc của bài yêu cầu; file đó còn có một phụ lục mock/dry-run dùng để luyện format trước khi có phản hồi thật, không tính vào đánh giá này. Chưa đủ điều kiện đánh dấu pass đầy đủ.
 - [x] Gate 5 — Learning, not praise — có [group-feedback-synthesis.md](group-feedback-synthesis.md) tổng hợp pattern từ 12 phản hồi thật, một Next Change có evidence cụ thể, và Still Unproven cập nhật sau feedback — chưa tuyên bố solution nào đã validated.
 
 > Gate 1 và Gate 2 hiện là tài liệu chuẩn bị dựa trên evidence Day 17. Trạng thái có thể được điều chỉnh sau khi coach review và sau khi nhóm prototype-test.
