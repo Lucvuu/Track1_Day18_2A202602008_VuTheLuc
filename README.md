@@ -16,7 +16,7 @@
 - **Case:** C — AI Support Radar (VLearn)
 - **Nhóm:** 4 thành viên
 - **Nguồn evidence:** Day 17 — 2 learner interviews và 1 Lab Coach interview
-- **Trạng thái:** CP1–CP3 hoàn thành; prototype A/B/C đã build, tự kiểm và có 12 phản hồi thật từ phiên phỏng vấn trực tiếp do Loan facilitate (CP4/CP5 — xem giới hạn phương pháp bên dưới); chưa validated
+- **Trạng thái:** CP1–CP3 hoàn thành; prototype A/B/C đã build, tự kiểm và có phản hồi thật từ phiên phỏng vấn trực tiếp do Loan facilitate (CP4/CP5 — xem giới hạn phương pháp bên dưới); chưa validated
 
 ## Hypothesis Problem
 
@@ -29,12 +29,12 @@
 | CP1 — Evidence Continuity | [cp1-evidence-continuity.md](cp1-evidence-continuity.md) | Hoàn thành bản chuẩn bị |
 | CP2 — Meaningful Options | [three-option-design-sheet.md](three-option-design-sheet.md) | Hoàn thành bản chuẩn bị |
 | CP3 — Human Control | [human-ai-decision-table.md](human-ai-decision-table.md) | Tự kiểm xong cho A, B và C |
-| CP4 — Test-ready | [prototype-link.md](prototype-link.md) | Prototype A/B/C chạy được local; 12 người ngoài nhóm đã dùng trong phiên phỏng vấn trực tiếp do Loan facilitate (quan sát trực tiếp, không narrate), nhưng **chưa ghi log hành vi chi tiết** theo thời gian thực — xem [prototype-feedback-note.md](prototype-feedback-note.md) |
+| CP4 — Test-ready | [prototype-link.md](prototype-link.md) | Prototype A/B/C chạy được local; người ngoài nhóm đã dùng trong phiên phỏng vấn trực tiếp do Loan facilitate (quan sát trực tiếp, không narrate), nhưng **chưa ghi log hành vi chi tiết** theo thời gian thực — xem [prototype-feedback-note.md](prototype-feedback-note.md) |
 | CP5 — Learning | [group-feedback-synthesis.md](group-feedback-synthesis.md) | Đã tổng hợp pattern từ 12 phản hồi và chốt một Next Change có evidence |
 
 ## Cách chạy prototype (Option A, B & C)
 
-Chưa deploy online — buổi phỏng vấn trực tiếp với 12 người ngoài nhóm (xem [prototype-feedback-note.md](prototype-feedback-note.md)) cũng dùng bản chạy local này, mở trên máy tính của Loan. Không cần build step, không cần backend, không cần cài package:
+Chưa deploy online — buổi phỏng vấn trực tiếp với người ngoài nhóm (xem [prototype-feedback-note.md](prototype-feedback-note.md)) cũng dùng bản chạy local này, mở trên máy tính của Loan. Không cần build step, không cần backend, không cần cài package:
 
 ```bash
 cd prototype
@@ -97,11 +97,11 @@ Nhóm tổ chức thành hai nhánh triển khai để phù hợp tình hình l�
 - **Chuẩn hóa test và tổng hợp feedback:** thiết kế khung test và cấu trúc tổng hợp (phân biệt observation/interpretation, quy tắc chỉ tính pattern lặp lại ≥3 người, không dùng đa số làm "sự thật"), rồi trực tiếp phỏng vấn 12 người ngoài nhóm — xem trực tiếp thao tác của họ trên cả ba tab A/B/C trong lúc hỏi — và biên soạn kết quả vào [prototype-feedback-note.md](prototype-feedback-note.md) và [group-feedback-synthesis.md](group-feedback-synthesis.md).
 - **Đầu ra:** Prototype C, Human–AI Decision Table, test script và Group Feedback Synthesis.
 - **Hỗ trợ hoàn thành phần của Nguyễn Thị Nam Phương:** [CẦN XÁC NHẬN: phần cụ thể bạn đã hỗ trợ Nam Phương là gì — chưa có tài liệu nào khác trong repo mô tả nội dung này]
-- **Facilitation / Observation:** trực tiếp facilitate phiên phỏng vấn với cả 12 người ngoài nhóm — xem trực tiếp thao tác của họ trên prototype (không narrate), đúng cấu trúc đồng bộ của luật facilitation gốc của bài. Giới hạn còn lại: không ghi log hành vi chi tiết theo thời gian thực (first action, chỗ dừng, cách sửa) ngay trong lúc quan sát, nên bảng phản hồi chỉ có lựa chọn + lý do, không có cột hành vi cụ thể.
+- **Facilitation / Observation:** trực tiếp facilitate phiên phỏng vấn với người ngoài nhóm — xem trực tiếp thao tác của họ trên prototype (không narrate), đúng cấu trúc đồng bộ của luật facilitation gốc của bài. Giới hạn còn lại: không ghi log hành vi chi tiết theo thời gian thực (first action, chỗ dừng, cách sửa) ngay trong lúc quan sát, nên bảng phản hồi chỉ có lựa chọn + lý do, không có cột hành vi cụ thể.
 
 ## Prototype Feedback
 
-**Nguồn:** 12 người ngoài nhóm dùng bản prototype chạy local trên máy tính của Loan, trong một phiên phỏng vấn trực tiếp do Đỗ Thị Thanh Loan facilitate — Loan xem trực tiếp thao tác của họ trên cả ba tab A/B/C, không narrate, đúng cấu trúc đồng bộ của luật facilitation gốc của bài. Chi tiết đầy đủ ở [prototype-feedback-note.md](prototype-feedback-note.md), tổng hợp pattern ở [group-feedback-synthesis.md](group-feedback-synthesis.md).
+**Nguồn:** Người ngoài nhóm dùng bản prototype chạy local trên máy tính của Loan, trong một phiên phỏng vấn trực tiếp do Đỗ Thị Thanh Loan facilitate — Loan xem trực tiếp thao tác của họ trên cả ba tab A/B/C, không narrate, đúng cấu trúc đồng bộ của luật facilitation gốc của bài. Chi tiết đầy đủ ở [prototype-feedback-note.md](prototype-feedback-note.md), tổng hợp pattern ở [group-feedback-synthesis.md](group-feedback-synthesis.md).
 
 **Giới hạn quan trọng:** phần "phiên đồng bộ, có facilitator quan sát trực tiếp" đã đạt. Giới hạn còn lại: hành vi cụ thể (first action, chỗ dừng, cách sửa) **không được ghi log lại theo thời gian thực** trong lúc quan sát — nên bảng phản hồi chỉ có dữ liệu về lựa chọn/lý do/điểm khó chịu, không có cột hành vi thao tác bằng văn bản.
 
@@ -115,8 +115,8 @@ Nhóm tổ chức thành hai nhánh triển khai để phù hợp tình hình l�
   - Cách hiển thị/giải thích priority nên như thế nào để đủ rõ mà không quá dài dòng.
   - False positive ở Option C nên được xử lý/phục hồi ra sao ngoài Undo hiện có.
   - Learner có cần được thông báo AI đang theo dõi tín hiệu hành vi của họ không (câu hỏi consent, ngoài scope 3 prototype hiện tại).
-  - Loan có quan sát trực tiếp thao tác của 12 người này, nhưng không ghi log hành vi chi tiết theo thời gian thực — nên vẫn thiếu bằng chứng viết lại cho việc họ có thực sự làm đúng outcome task hay chỉ so sánh 3 cơ chế trừu tượng.
-  - Trong 12 người có 1 Lab Coach thật (Lê Thiên Khang), nhưng chưa rõ có phải test lúc đang trong ca dạy bận rộn hay không — [CẦN XÁC NHẬN: phản hồi số mấy trong prototype-feedback-note.md].
+  - Loan có quan sát trực tiếp thao tác của nhóm người này, nhưng không ghi log hành vi chi tiết theo thời gian thực — nên vẫn thiếu bằng chứng viết lại cho việc họ có thực sự làm đúng outcome task hay chỉ so sánh 3 cơ chế trừu tượng.
+  - Trong nhóm người được test có 1 Lab Coach (Lê Thiên Khang), nhưng chưa rõ có phải test lúc đang trong ca dạy bận rộn hay không — [CẦN XÁC NHẬN: phản hồi số mấy trong prototype-feedback-note.md].
 
 ## AI Support Log
 

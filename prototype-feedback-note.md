@@ -1,8 +1,8 @@
 # Prototype Feedback Note
 
 **Người thu thập:** Đỗ Thị Thanh Loan
-**Hình thức:** 12 người ngoài nhóm mở prototype (chạy local, file `index.html`) trên máy tính của Loan và tự bấm qua cả 3 tab A/B/C, trong khi Loan **trực tiếp phỏng vấn và xem thao tác của họ** (facilitator có mặt, quan sát trực tiếp, không narrate) — đây là phiên đồng bộ đúng cấu trúc facilitation gốc của bài, không phải tự báo cáo qua tin nhắn.
-**Vai trò người tham gia:** trong 12 người này có 1 Lab Coach thật — Lê Thiên Khang. 
+**Hình thức:** Một nhóm người ngoài nhóm mở prototype (chạy local, file `index.html`) trên máy tính của Loan và tự bấm qua cả 3 tab A/B/C, trong khi Loan **trực tiếp phỏng vấn và xem thao tác của họ** (facilitator có mặt, quan sát trực tiếp, không narrate) — đây là phiên đồng bộ đúng cấu trúc facilitation gốc của bài, không phải tự báo cáo qua tin nhắn.
+**Vai trò người tham gia:** trong nhóm người được test có 1 Lab Coach — Lê Thiên Khang.
 
 ## Giới hạn về phương pháp — đọc trước khi dùng bảng dưới
 
