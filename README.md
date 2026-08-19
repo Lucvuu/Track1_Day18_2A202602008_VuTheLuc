@@ -92,15 +92,14 @@ Nhóm tổ chức thành hai nhánh triển khai để phù hợp tình hình l�
 - Mỗi observation phải tách khỏi interpretation, không tạo feedback giả.
 - Mỗi người ghi rõ phần đóng góp thực tế trong repo cá nhân và trong AI Support Log.
 
-## Đóng góp của tôi trong nhóm — Vũ Thế Lực
+## Đóng góp của tôi trong nhóm — Đỗ Thị Thanh Loan
 
-- **Option phụ trách chính:** Option A (Coach Query) và Option B (AI Review Queue) — thiết kế cơ chế, build prototype, tự viết smoke test (jsdom) để kiểm toàn bộ flow trước khi báo hoàn thành.
-- **Hỗ trợ hoàn thiện Option C:** Option C (Proactive Support Agent) thuộc phân công gốc của Đỗ Thị Thanh Loan; tôi code phần implementation trong cùng bộ file `prototype/` để giữ đúng data fixture chung, dựa trên cơ chế Act/Ask/Don't-Act mà Loan đã thiết kế ở CP2/CP3.
-- **Shared context/content:** chuẩn hóa data fixture dùng chung cho cả ba option (lớp 50 learner, Checkpoint 1 — Cài đặt môi trường, Nhóm 03/07/09), visual style dùng chung, cơ chế reset về common context; quản lý cấu trúc repo và README.
-- **Human–AI decisions:** tham gia chốt các quyết định trong [human-ai-decision-table.md](human-ai-decision-table.md) — ví dụ giữ A là user-led/B là co-create/C là proactive agent để khác biệt thật ở cơ chế; giữ cả Nhóm 03 và Nhóm 09 bên cạnh Nhóm 07 (không chỉ hiện "đáp án đúng") để tester phải tự so sánh evidence; cụ thể hoá quy tắc Act rủi ro thấp / Ask khi mâu thuẫn hoặc ảnh hưởng lớn cho ba case của Option C.
-- **Facilitation:** chưa thực hiện phiên test facilitate đồng bộ đúng luật gốc của bài (tester tự thao tác, facilitator quan sát trực tiếp không narrate). Có một buổi demo có dẫn (tôi thao tác và giải thích) với một mentor/stakeholder — ghi lại làm input tham khảo trong `ai-support-log.md` mục 5, **không tính là facilitation hợp lệ cho Chặng 6**. [CẦN XÁC NHẬN: nếu bạn có tự facilitate buổi nào khác (ngồi cạnh, quan sát, không narrate) mà tôi chưa biết, cho tôi thông tin để bổ sung đúng]
-- **Observation:** không có dữ liệu observation hành vi thời gian thực (first action, chỗ dừng, cách lấy lại control) vì 12 phản hồi thu được là tự báo cáo không đồng bộ qua tin nhắn — xem giới hạn chi tiết trong [prototype-feedback-note.md](prototype-feedback-note.md).
-- **Tổng hợp feedback:** thu thập và biên soạn 12 phản hồi thật thành [prototype-feedback-note.md](prototype-feedback-note.md) và [group-feedback-synthesis.md](group-feedback-synthesis.md), tách observation khỏi interpretation, chốt một Next Change có evidence.
+- **Option phụ trách chính:** Option C (Proactive Support Agent) — thiết kế cơ chế gốc ở CP2/CP3: quy tắc Act (rủi ro thấp, có thể thu hồi) / Ask (mâu thuẫn hoặc ảnh hưởng lớn) / Don't Act, và các cơ chế Control & Recovery bắt buộc mà A/B không cần (audit log, undo, mô phỏng phản hồi learner, opt-out theo nhóm, pause toàn cục ở cấp policy). Phần implementation (code) trong `prototype/` do Vũ Thế Lực hoàn thiện đúng theo thiết kế này, dùng chung data fixture với A/B — xem `ai-support-log.md` mục 4.
+- **Human–AI Design:** chủ trì khung [human-ai-decision-table.md](human-ai-decision-table.md) (CP3 — Human Control) cho cả ba option, đặc biệt các ranh giới của Option C — AI được tự gửi một câu hỏi trung lập rủi ro thấp nhưng không bao giờ được tự đóng case của một learner cụ thể; yêu cầu trợ giúp trực tiếp từ learner luôn được coi là "ảnh hưởng lớn" nên chuyển thẳng coach thay vì để AI tự trả lời.
+- **Chuẩn hóa test và tổng hợp feedback:** phụ trách khung test và cấu trúc tổng hợp dùng cho [group-feedback-synthesis.md](group-feedback-synthesis.md) (phân biệt observation/interpretation, quy tắc chỉ tính pattern lặp lại ≥3 người, không dùng đa số làm "sự thật"); việc thu thập 12 phản hồi thật và biên soạn chi tiết vào [prototype-feedback-note.md](prototype-feedback-note.md) trên khung này do Lực thực hiện — xem `ai-support-log.md` mục 6.
+- **Đầu ra:** Prototype C, Human–AI Decision Table, test script và Group Feedback Synthesis.
+- **Hỗ trợ hoàn thành phần của Nguyễn Thị Nam Phương:** [CẦN XÁC NHẬN: phần cụ thể bạn đã hỗ trợ Nam Phương là gì — chưa có tài liệu nào khác trong repo mô tả nội dung này]
+- **Facilitation / Observation:** [CẦN XÁC NHẬN: bạn có tự ngồi quan sát ai đó dùng prototype không narrate không? Tài liệu hiện chỉ ghi nhận một buổi demo có dẫn của Lực với mentor (`ai-support-log.md` mục 5, không tính là facilitation hợp lệ) và 12 phản hồi tự báo cáo không có ai quan sát trực tiếp — nếu bạn có buổi/quan sát riêng, cho tôi biết để bổ sung đúng]
 
 ## Prototype Feedback
 
