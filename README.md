@@ -96,7 +96,7 @@ Nhóm tổ chức thành hai nhánh triển khai để phù hợp tình hình l�
 - **Human–AI Design:** chủ trì khung [human-ai-decision-table.md](human-ai-decision-table.md) (CP3 — Human Control) cho cả ba option, đặc biệt các ranh giới của Option C — AI được tự gửi một câu hỏi trung lập rủi ro thấp nhưng không bao giờ được tự đóng case của một learner cụ thể; yêu cầu trợ giúp trực tiếp từ learner luôn được coi là "ảnh hưởng lớn" nên chuyển thẳng coach thay vì để AI tự trả lời.
 - **Chuẩn hóa test và tổng hợp feedback:** thiết kế khung test và cấu trúc tổng hợp (phân biệt observation/interpretation, quy tắc chỉ tính pattern lặp lại ≥3 người, không dùng đa số làm "sự thật"), rồi trực tiếp phỏng vấn 12 người ngoài nhóm — xem trực tiếp thao tác của họ trên cả ba tab A/B/C trong lúc hỏi — và biên soạn kết quả vào [prototype-feedback-note.md](prototype-feedback-note.md) và [group-feedback-synthesis.md](group-feedback-synthesis.md).
 - **Đầu ra:** Prototype C, Human–AI Decision Table, test script và Group Feedback Synthesis.
-- **Hỗ trợ hoàn thành phần của Nguyễn Thị Nam Phương:** [CẦN XÁC NHẬN: phần cụ thể bạn đã hỗ trợ Nam Phương là gì — chưa có tài liệu nào khác trong repo mô tả nội dung này]
+- **Hỗ trợ hoàn thành phần của Nguyễn Thị Nam Phương:** 
 - **Facilitation / Observation:** trực tiếp facilitate phiên phỏng vấn với người ngoài nhóm — xem trực tiếp thao tác của họ trên prototype (không narrate), đúng cấu trúc đồng bộ của luật facilitation gốc của bài. Giới hạn còn lại: không ghi log hành vi chi tiết theo thời gian thực (first action, chỗ dừng, cách sửa) ngay trong lúc quan sát, nên bảng phản hồi chỉ có lựa chọn + lý do, không có cột hành vi cụ thể.
 
 ## Prototype Feedback
