@@ -72,6 +72,8 @@ Có một buổi mình (Lực) demo prototype Option C cho một người có va
 - AI tổng hợp pattern chỉ từ những điểm lặp lại ở nhiều người (≥3), không dùng ý kiến đơn lẻ làm kết luận chung; chốt một Next Change (thêm giải thích "vì sao priority này" ngay ở màn hình queue) dựa trên pattern có evidence rõ nhất (4/12 người cùng vướng một chỗ).
 - Trước đó tôi từng yêu cầu AI tự viết feedback giả vì hết giờ; AI từ chối và giải thích đây là điều đề bài cấm rõ nhất, thay vào đó chuẩn bị sẵn khung điền và kịch bản test nhanh. Ghi lại ở đây cho trung thực, dù cuối cùng có được feedback thật để dùng.
 
+**Đính chính (sau khi Loan xác nhận trực tiếp trong một phiên khác):** mô tả "tự báo lại qua tin nhắn, không có ai quan sát trực tiếp" ở trên là hiểu chưa đúng lúc đó. Thực tế Đỗ Thị Thanh Loan là người trực tiếp phỏng vấn và xem thao tác của 12 người này (facilitator có mặt, quan sát trực tiếp) — đã sửa lại đúng ở `prototype-feedback-note.md` và `group-feedback-synthesis.md`. Phần còn thiếu thật sự chỉ là: hành vi cụ thể (first action, chỗ dừng, cách sửa) không được ghi log lại theo thời gian thực trong lúc quan sát.
+
 ## Cam kết minh bạch
 
 AI hỗ trợ tôi ở phần phân tích, cấu trúc tài liệu và soạn thảo câu chữ. Evidence gốc vẫn là từ ba transcript Day 17, không phải AI tạo ra. Tôi và nhóm chịu trách nhiệm kiểm tra lại nội dung, build prototype, test với người thật và ghi feedback đúng như những gì quan sát được.

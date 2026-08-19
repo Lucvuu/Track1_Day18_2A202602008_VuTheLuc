@@ -1,13 +1,13 @@
 # Prototype Feedback Note
 
-**Người thu thập:** Vũ Thế Lực
-**Hình thức:** 12 người ngoài nhóm tự mở link prototype (https://claude.ai/code/artifact/fce7227a-a027-47b1-9282-2ebf58048e26), tự bấm qua cả 3 tab A/B/C, rồi tự trả lời qua tin nhắn — **không có người facilitate ngồi cạnh quan sát trực tiếp**.
+**Người thu thập:** Đỗ Thị Thanh Loan
+**Hình thức:** 12 người ngoài nhóm tự mở link prototype (https://claude.ai/code/artifact/fce7227a-a027-47b1-9282-2ebf58048e26) và tự bấm qua cả 3 tab A/B/C, trong khi Loan **trực tiếp phỏng vấn và xem thao tác của họ** (facilitator có mặt, quan sát trực tiếp, không narrate) — đây là phiên đồng bộ đúng cấu trúc facilitation gốc của bài, không phải tự báo cáo qua tin nhắn.
 
 ## Giới hạn về phương pháp — đọc trước khi dùng bảng dưới
 
-Luật facilitation gốc của bài (tester tự thao tác trong lúc facilitator quan sát và hỏi trực tiếp) giả định một phiên đồng bộ, có người ghi lại hành vi thời gian thực (first action, chỗ dừng/do dự, cách lấy lại control). 12 phản hồi này là **tự báo cáo không đồng bộ** (async self-report): mỗi người tự mở, tự dùng, rồi tự gõ câu trả lời gửi lại — không ai quan sát được họ thao tác thế nào lúc đó.
+Luật facilitation gốc của bài (tester tự thao tác trong lúc facilitator quan sát và hỏi trực tiếp) giả định một phiên đồng bộ, có người ghi lại hành vi thời gian thực (first action, chỗ dừng/do dự, cách lấy lại control). Phần "đồng bộ + facilitator quan sát trực tiếp" của 12 phiên này **đã có** (Loan xem trực tiếp thao tác của từng người). Giới hạn còn lại: **hành vi cụ thể không được ghi chú lại thành văn bản ngay trong lúc quan sát** — không có log first action/chỗ dừng/cách sửa theo từng người, chỉ có ấn tượng chung sau khi xem.
 
-Vì vậy bảng dưới đây **chỉ điền được** cột "Option chọn" và "Lý do & điểm khó chịu" — cột hành vi quan sát được (first action, evidence đọc/bỏ qua, cách sửa) để trống vì không có dữ liệu thật, không suy đoán thêm.
+Vì vậy bảng dưới đây **chỉ điền được** cột "Option chọn" và "Lý do & điểm khó chịu" — cột hành vi quan sát được (first action, evidence đọc/bỏ qua, cách sửa) để trống **không phải vì thiếu facilitator**, mà vì thiếu ghi chép chi tiết theo thời gian thực lúc quan sát; không suy đoán thêm nội dung không có thật.
 
 ## 12 phản hồi thô
 
@@ -30,7 +30,10 @@ Vì vậy bảng dưới đây **chỉ điền được** cột "Option chọn" 
 
 ```
 OBSERVED
-12 người tự mở prototype qua link, dùng cả A/B/C, tự báo cáo lựa chọn + lý do + điểm khó chịu qua tin nhắn.
+12 người mở prototype qua link, dùng cả A/B/C, trong buổi phỏng vấn trực tiếp do Loan facilitate
+(Loan xem trực tiếp thao tác, không narrate); lựa chọn + lý do + điểm khó chịu ghi lại qua hỏi đáp
+trực tiếp, không phải qua tin nhắn tự gửi. Hành vi thao tác cụ thể không được ghi log theo thời gian
+thực trong lúc quan sát.
 Phân bố lựa chọn: B = 5/12, C = 4/12, A = 3/12.
 
 INTERPRETED
@@ -52,8 +55,9 @@ STILL UNPROVEN
 - False positive ở Option C nên được xử lý/phục hồi ra sao — chưa có cơ chế cụ thể, mới chỉ có Undo.
 - Learner có cần được thông báo AI đang theo dõi tín hiệu hành vi của họ không — câu hỏi consent
   chưa được trả lời, không nằm trong phạm vi 3 prototype hiện tại.
-- Vì đây là tự báo cáo không đồng bộ, không biết hành vi thao tác thật của 12 người này khi dùng —
-  chỉ biết họ nói gì sau khi dùng xong, không biết họ có thực sự làm đúng outcome task hay bỏ qua bước nào.
+- Loan có xem trực tiếp thao tác của 12 người này, nhưng không ghi log hành vi chi tiết theo thời gian
+  thực lúc quan sát — nên vẫn không có dữ liệu viết lại về first action/chỗ dừng/cách sửa cho từng người,
+  dù bản thân buổi phỏng vấn là đồng bộ và có facilitator quan sát trực tiếp.
 ```
 
 ---
