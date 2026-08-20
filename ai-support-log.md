@@ -1,6 +1,6 @@
 # AI Support Log — Day 18
 
-**Người nộp:** Vũ Thế Lực — 2A202602008  
+**Người nộp:** Đỗ Thị Thanh Loan — 2A202601654  
 **Case:** C — AI Support Radar (VLearn)
 
 ## 1. AI đã giúp tôi ở đâu?
